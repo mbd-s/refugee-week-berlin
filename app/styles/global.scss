@@ -1,0 +1,46 @@
+$highlight: #006738;
+
+$darkhighlight: #00331c;
+
+$backgroundgrey: #ced1ce;
+
+.header {
+  img {
+    width: 300px;
+    @media only screen and (max-width: 724px) {
+      width: 180px;
+    }
+  }
+  li {
+    a {
+      font-weight: bold;
+    }
+  }
+}
+
+
+a {
+  color: $highlight !important;
+}
+
+a:hover {
+    color: $darkhighlight !important;
+}
+
+@mixin global-button {
+  background-color: $highlight;
+  color: $backgroundgrey;
+  border-color: $highlight;
+  &:hover {
+    background-color: $darkhighlight;
+    border-color: $darkhighlight;
+  }
+}
+
+.btn {
+  @include global-button;
+}
+
+strong {
+  weight: 900;
+}

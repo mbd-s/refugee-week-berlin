@@ -1,0 +1,11 @@
+// bower:scss
+// endbower
+@import 'bower_components/bootstrap/scss/bootstrap.scss';
+@import 'global.scss';
+@import 'program.scss';
+@import 'exhibition.scss';
+
+body {
+  font-family: 'Arial';
+  background-color: $backgroundgrey;
+}
